@@ -19,7 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://www.emergentsoftware.net/')
 
-WebUI.verifyElementPresent(findTestObject('HomePageLogo'), 0)
+WebUI.maximizeWindow()
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageLogo'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/ContactUsLink'), 0)
+
+WebUI.verifyTextPresent('Emergent Software, an award-winning custom software development company in Minneapolis, Minnesota provides high-quality custom software development, website development & design, mobile & web application development, SQL Server DBA services, Azure cloud consulting, Power BI, SharePoint consulting, ongoing maintenance & support and much more.', 
+    false)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomeServices'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomeGreyBox'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageCarousel'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageBadges'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePagePosts'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageContactUsSection'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageFooterSocials'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/HomePageCopyRight'), 0)
 
 WebUI.closeBrowser()
 
